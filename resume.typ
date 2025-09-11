@@ -2,7 +2,7 @@
 
 #show: resume.with(
   author: "Akshat Adsule",
-  location: "Davis, CA",
+  // location: "Davis, CA",
   contacts: (
     [#link("mailto:akshat@adsule.net")[akshat\@adsule.net]],
     // [#link("https://aksads.tech")[Website]],
@@ -28,7 +28,6 @@
   (
     "Expertise",
     (
-      [Mobile Development],
       [Web Development],
       [Backend Development],
       [Full-Stack Development],
@@ -38,41 +37,49 @@
   (
     "Technologies & Platforms",
     (
+      [Java],
+      [Spring Boot],
+      [Node.js],
       [Git],
-      [Android],
-      [Kotlin],
-      [iOS],
-      [SwiftUI],
-      [Flutter],
       [React],
       [Docker],
       [Kubernetes],
       [Azure],
       [AWS],
       [Google Cloud Platform],
-      [Firebase],
       [SQL],
-      [Linux],
+      [Unix],
     ),
   ),
   (
     "Languages",
     (
-      [C++],
-      [C],
-      [Python],
       [Java],
       [JavaScript/TypeScript],
       [HTML/CSS],
+      [C++],
+      [C],
+      [Python],
       [SQL],
-      [Rust],
-      [Swift],
-      [Kotlin],
+      [Go],
     ),
   ),
 ))
 
 = Experience
+
+#exp(
+  role: "Software Engineering Intern",
+  project: "Veeva Systems",
+  date: "June 2025 - September 2025",
+  summary: "Contributing to a platform for the life sciences industry",
+  details: [
+    - Contributed to Veeva’s Electronic Data Capture (EDC) application, a platform for collecting, reviewing, and validating clinical study data
+    - Resolved 40+ software defects across the application, improving system stability and reliability
+    - Developed new features to support file uploads, integration of externally sourced data, and ingestion of lab-collected data
+  ],
+)
+
 #exp(
   role: "Application Developer",
   project: "UC Davis Information and Educational Technology",
@@ -82,6 +89,18 @@
     - Worked with students and senior developers to maintain MyInfoVault, an all-encompassing platform for academic personnel
     - Developed 10+ new features in a complex and mature Java Spring web application as per the needs of actual users
     - Collaborated on an ongoing UI refresh and transitioned existing JSP pages to modern technologies such as Vue.js
+  ],
+)
+
+#exp(
+  role: "Software Engineer",
+  project: "Codelab",
+  date: "September 2024 - June 2025",
+  summary: "Building a web-based assistant for interview preparation",
+  details: [
+    - Worked on a web based AI assistant for interview prep for college students and built with using TypeScript for backend and Next.js for Frontend
+    - Integrated Hume AI's computer vision models to detect facial expression and emotion changes to give highly personalized and realistic interview feedback
+    - Integrate a real-time interview experience using SOTA large language models along with a custom analytics pipeline to deliver relevant feedback and suggestions
   ],
 )
 
@@ -98,24 +117,24 @@
   ],
 )
 
-= Projects
-#exp(
-  role: link("https://volare.aksads.tech")[Volare],
-  // project: "Blood Pressure Monitor",
-  summary: "",
-  details: [
-    - Collaborated with a team of developers and designers to build a web app allowing users to practice for job interviews with an LLM, catered to their job listing and to-feature performance tracking for an iterative practice experience.
-    - Integrated a live interview enviroment uzing a variety of technologies to both simulate a realtime interview and collect/analyze user performance.
-    - Built front and backend systems using Next.js, Supabase, and FastAPI
-  ],
-)
-#exp(
-  role: link("https://play.google.com/store/apps/details?id=com.homestead.mustangapp")[The Mustang Alliance],
-  // project: "The Mustang Alliance",
-  summary: "",
-  details: [
-    - Led development for a cross-platform mobile app development during the 2020 Pandemic
-    - Allows our team to record and analyze the performance of other teams during a competition to determine optimal strategies and team alliances
-    - Enables scouters to record data on other teams during matches, and then analyze the data to determine the best teams to partner with and identify weaknesses in other teams
-  ],
-)
+// = Projects
+// #exp(
+//   role: link("https://volare.aksads.tech")[Volare],
+//   // project: "Blood Pressure Monitor",
+//   summary: "",
+//   details: [
+//     - Collaborated with a team of developers and designers to build a web app allowing users to practice for job interviews with an LLM, catered to their job listing and to-feature performance tracking for an iterative practice experience.
+//     - Integrated a live interview enviroment uzing a variety of technologies to both simulate a realtime interview and collect/analyze user performance.
+//     - Built front and backend systems using Next.js, Supabase, and FastAPI
+//   ],
+// )
+// #exp(
+//   role: link("https://play.google.com/store/apps/details?id=com.homestead.mustangapp")[The Mustang Alliance],
+//   // project: "The Mustang Alliance",
+//   summary: "",
+//   details: [
+//     - Led development for a cross-platform mobile app development during the 2020 Pandemic
+//     - Allows our team to record and analyze the performance of other teams during a competition to determine optimal strategies and team alliances
+//     - Enables scouters to record data on other teams during matches, and then analyze the data to determine the best teams to partner with and identify weaknesses in other teams
+//   ],
+// )
