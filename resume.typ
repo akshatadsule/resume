@@ -1,140 +1,103 @@
-#import "@preview/guided-resume-starter-cgc:2.0.0": *
+#import "@preview/basic-resume:0.2.9": *
+
+// Put your personal information here, replacing mine
+#let name = "Akshat Adsule"
+#let location = "Dublin, CA"
+#let email = "akshat@adsule.net"
+#let github = "github.com/akshatadsule"
+#let linkedin = "linkedin.com/in/akshatadsule"
+#let personal-site = "aksads.tech"
 
 #show: resume.with(
-  author: "Akshat Adsule",
-  // location: "Davis, CA",
-  contacts: (
-    [#link("mailto:akshat@adsule.net")[akshat\@adsule.net]],
-    // [#link("https://aksads.tech")[Website]],
-    [#link("https://github.com/AkshatAdsule")[github.com/AkshatAdsule]],
-    [#link("https://linkedin.com/in/AkshatAdsule")[linkedin.com/in/akshatadsule]],
-  ),
-  // footer: [#align(center)[#emph[References available on request]]]
+  author: name,
+  location: location,
+  email: email,
+  github: github,
+  linkedin: linkedin,
+  personal-site: personal-site,
+  accent-color: "#26428b",
+  font: "Helvetica",
+  paper: "us-letter",
+  author-position: left,
+  personal-info-position: left,
 )
+== Education
 
-= Education
 #edu(
   institution: "University of California, Davis",
-  date: "June 2026 (Expected)",
-  gpa: "3.8 of 4.0, Dean's List",
-  degrees: (
-    ("Bachelor's of Science.", "Computer Science & Engineering"),
-    // ("Minors", "Mathematics"),
-  ),
+  dates: dates-helper(start-date: "Sept 2022", end-date: "June 2026"),
+  degree: "Bachelor of Science, Computer Science and Engineering",
 )
+- Cumulative GPA: 3.88\/4.0 | Dean's List, cum laude
+// - Relevant Coursework: Data Structures & Algorithms, Machine Learning, Computer Vision, Massively Parallel Processing
 
-= Skills
-#skills((
-  (
-    "Expertise",
-    (
-      [Web Development],
-      [Backend Development],
-      [Full-Stack Development],
-      [Project Management],
-    ),
-  ),
-  (
-    "Technologies & Platforms",
-    (
-      [Java],
-      [Spring Boot],
-      [Node.js],
-      [Git],
-      [React],
-      [Docker],
-      [Kubernetes],
-      [Azure],
-      [AWS],
-      [Google Cloud Platform],
-      [SQL],
-      [Unix],
-    ),
-  ),
-  (
-    "Languages",
-    (
-      [Java],
-      [JavaScript/TypeScript],
-      [HTML/CSS],
-      [C++],
-      [C],
-      [Python],
-      [SQL],
-      [Go],
-    ),
-  ),
-))
+== Skills
+*Languages*: Java, C++, TypeScript, JavaScript, Go, SQL, HTML/CSS
 
-= Experience
+*Frameworks / Libraries*: Spring, React, Next.js, Vue.js, Node.js, Three.js
 
-#exp(
-  role: "Software Engineering Intern",
-  project: "Veeva Systems",
-  date: "June 2025 - September 2025",
-  summary: "Contributing to a platform for the life sciences industry",
-  details: [
-    - Contributed to Veeva’s Electronic Data Capture (EDC) application, a platform for collecting, reviewing, and validating clinical study data
-    - Resolved 40+ software defects across the application, improving system stability and reliability
-    - Developed new features to support file uploads, integration of externally sourced data, and ingestion of lab-collected data
-  ],
+*Cloud / Databases / DevOps*: Docker, AWS, Azure, Firebase, PostgreSQL, Git, CI/CD
+
+== Work Experience
+
+#work(
+  title: "Software Engineering Intern",
+  location: "Pleasanton, CA",
+  company: "Veeva Systems",
+  dates: dates-helper(start-date: "June 2025", end-date: "Sept 2025"),
 )
+- Worked on Veeva’s Electronic Data Capture (EDC) application, a platform for collecting and validating clinical study data
+- Resolved 40+ software defects a Java backend and React/Backbone Frontend, improving system usability and reliability
+- Implemented production features for file uploads, external data ingestion, and lab-data workflows in Veeva EDC, improving support for clinical study data collection.
 
-#exp(
-  role: "Application Developer",
-  project: "UC Davis Information and Educational Technology",
-  date: "October 2023 - Present",
-  summary: "Assisting development and maintenance of a platform for academic personnel",
-  details: [
-    - Worked with students and senior developers to maintain MyInfoVault, an all-encompassing platform for academic personnel
-    - Developed 10+ new features in a complex and mature Java Spring web application as per the needs of actual users
-    - Collaborated on an ongoing UI refresh and transitioned existing JSP pages to modern technologies such as Vue.js
-  ],
+#work(
+  title: "Application Developer",
+  location: "Davis, CA",
+  company: "UC Davis Information and Educational Technology",
+  dates: dates-helper(start-date: "Oct 2023", end-date: "June 2026"),
 )
+- Worked with students and senior developers to maintain MyInfoVault, a platform for academic personnel
+- Resolved defects and developed new features in a mature Java Spring web application as per the needs of actual users
+- Collaborated on an ongoing UI refresh and transitioned existing JSP pages to modern technologies such as Vue.js
 
-#exp(
-  role: "Software Engineer",
-  project: "Codelab",
-  date: "September 2024 - June 2025",
-  summary: "Building a web-based assistant for interview preparation",
-  details: [
-    - Worked on a web based AI assistant for interview prep for college students and built with using TypeScript for backend and Next.js for Frontend
-    - Integrated Hume AI's computer vision models to detect facial expression and emotion changes to give highly personalized and realistic interview feedback
-    - Integrate a real-time interview experience using SOTA large language models along with a custom analytics pipeline to deliver relevant feedback and suggestions
-  ],
+#work(
+  title: "Software Development Intern",
+  location: "Davis, CA",
+  company: "American Wild Horse Campaign",
+  dates: dates-helper(start-date: "June 2023", end-date: "Sept 2024"),
 )
+- Worked with a team to build and release a full-stack mobile application to gather crowdsourced data to identify and tag horses in the wild with machine learning
+- Designed and deployed backend systems for image processing, user management, and app functionality using Node.js, Microsoft Azure, Google Firebase, PostgreSQL and Docker
+- Implemented machine learning models into the backend to ensure image validity and quality while removing unsafe or unwanted user content
 
-#exp(
-  role: "Software Development Intern",
-  project: "American Wild Horse Campaign",
-  date: "June 2023 - September 2023",
-  summary: "Leading development of a new platform for managing wild horse populations",
-  details: [
-    - Worked with a team of fellow interns to build & release a full-stack mobile application to gather crowdsourced data for an ongoing project to identify and tag horses in the wild with machine learning
-    - Designed and deployed backend systems for image processing, user management, and app functionality using standard technologies and platforms such as Node.js, Microsoft Azure, Google Firebase, PostgresSQL, Docker, and Kubernetes.
-    - Implemented machining learning models in to the backend to ensure image validity and quality whilst removing unwanted and dangerous content
-    // - Worked on a custom cross-platform mobile application for AWHC members to contribute \& maintain a connection with the organization
-  ],
+== Projects
+#project(
+  name: "Distributed Deep Rendering and Compositing",
+  dates: dates-helper(start-date: "Jan 2026", end-date: "Present"),
+  url: "github.com/skewer-project/skewer"
 )
+- Building Skewer, an open-source animation suite for distributed deep rendering, compositing, and render orchestration
+- Developed a custom C++ ray tracing renderer with deep sampling support for per-pixel depth and opacity data
+- Researched and implemented a deep image compositor for merging multi-layer render outputs efficiently
+- Designed cloud infrastructure for distributed render jobs across local and remote workers
+- Created a React and Three.js scene previewer for editing scenes and dispatching render jobs
 
-// = Projects
-// #exp(
-//   role: link("https://volare.aksads.tech")[Volare],
-//   // project: "Blood Pressure Monitor",
-//   summary: "",
-//   details: [
-//     - Collaborated with a team of developers and designers to build a web app allowing users to practice for job interviews with an LLM, catered to their job listing and to-feature performance tracking for an iterative practice experience.
-//     - Integrated a live interview enviroment uzing a variety of technologies to both simulate a realtime interview and collect/analyze user performance.
-//     - Built front and backend systems using Next.js, Supabase, and FastAPI
-//   ],
+#project(
+  name: "Volare",
+  dates: dates-helper(start-date: "Sept 2024", end-date: "May 2025"),
+  url: "volare.aksads.tech"
+)
+- Launched Volare, a web-based AI interview coach that helps students practice with role-specific mock interviews
+- Developed a TypeScript backend and Next.js frontend for generating personalized interview sessions from job listings and user profiles and resumes
+- Integrated ElevenLabs voice synthesis to support real-time conversational interview practice
+- Added computer vision feedback for facial expression and emotion cues to make post-interview coaching more personalized
+
+// #project(
+//   name: "BikeBlackBox",
+//   dates: dates-helper(start-date: "April 2025", end-date: "June 2025"),
+//   url: "b3.aksads.tech"
 // )
-// #exp(
-//   role: link("https://play.google.com/store/apps/details?id=com.homestead.mustangapp")[The Mustang Alliance],
-//   // project: "The Mustang Alliance",
-//   summary: "",
-//   details: [
-//     - Led development for a cross-platform mobile app development during the 2020 Pandemic
-//     - Allows our team to record and analyze the performance of other teams during a competition to determine optimal strategies and team alliances
-//     - Enables scouters to record data on other teams during matches, and then analyze the data to determine the best teams to partner with and identify weaknesses in other teams
-//   ],
-// )
+// - Built B3, a smart bike monitoring system for automatic ride tracking, crash detection, and live location sharing
+// - Prototyped embedded hardware with a TI CC3200 SoC, GPS antenna, OLED display, and accelerometer
+// - Used AWS IoT Device Shadows and SNS to synchronize bike state and send crash detection alerts in real time
+// - Developed a tracking web app and backend for ride history, live maps, and remote lock controls
