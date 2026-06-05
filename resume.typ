@@ -56,7 +56,7 @@
   company: "UC Davis Information and Educational Technology",
   dates: dates-helper(start-date: "Oct 2023", end-date: "June 2026"),
 )
-- Worked with students and senior developers to maintain MyInfoVault, a platform for academic personnel
+- Collaborated with senior developers to maintain MyInfoVault, a platform for academic personnel
 - Resolved defects and developed new features in a mature Java Spring web application as per the needs of actual users
 - Collaborated on an ongoing UI refresh and transitioned existing JSP pages to modern technologies such as Vue.js
 
