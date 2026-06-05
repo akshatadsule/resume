@@ -79,7 +79,7 @@
 - Building Skewer, an open-source animation suite for distributed deep rendering, compositing, and render orchestration
 - Developed a custom C++ ray tracing renderer with deep sampling support for per-pixel depth and opacity data
 - Researched and implemented a deep image compositor for merging multi-layer render outputs efficiently
-- Designed cloud infrastructure for distributed render jobs across local and remote workers
+- Designed cloud infrastructure for distributed render jobs across Google Cloud Platform
 - Created a React and Three.js scene previewer for editing scenes and dispatching render jobs
 
 #project(
