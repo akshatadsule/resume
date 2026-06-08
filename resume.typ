@@ -6,7 +6,7 @@
 #let email = "akshat@adsule.net"
 #let github = "github.com/akshatadsule"
 #let linkedin = "linkedin.com/in/akshatadsule"
-#let personal-site = "aksads.tech"
+#let personal-site = "adsule.com"
 
 #show: resume.with(
   author: name,
@@ -85,7 +85,7 @@
 #project(
   name: "Volare",
   dates: dates-helper(start-date: "Sept 2024", end-date: "May 2025"),
-  url: "volare.aksads.tech"
+  url: "volare.adsule.com"
 )
 - Launched Volare, a web-based AI interview coach that helps students practice with role-specific mock interviews
 - Developed a TypeScript backend and Next.js frontend for generating personalized interview sessions from job listings and user profiles and resumes
@@ -95,7 +95,7 @@
 // #project(
 //   name: "BikeBlackBox",
 //   dates: dates-helper(start-date: "April 2025", end-date: "June 2025"),
-//   url: "b3.aksads.tech"
+//   url: "b3.adsule.com"
 // )
 // - Built B3, a smart bike monitoring system for automatic ride tracking, crash detection, and live location sharing
 // - Prototyped embedded hardware with a TI CC3200 SoC, GPS antenna, OLED display, and accelerometer
