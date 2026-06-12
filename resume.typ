@@ -47,7 +47,7 @@
   dates: dates-helper(start-date: "June 2025", end-date: "Sept 2025"),
 )
 - Worked on Veeva’s Electronic Data Capture (EDC) application, a platform for collecting and validating clinical study data
-- Resolved 40+ software defects a Java backend and React/Backbone Frontend, improving system usability and reliability
+- Resolved 40+ software defects in a Java backend and React/Backbone Frontend, improving system usability and reliability
 - Implemented production features for file uploads, external data ingestion, and lab-data workflows in Veeva EDC, improving support for clinical study data collection.
 
 #work(
